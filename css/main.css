@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 100vw;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/* header */
+
+header{
+    width: 100vw;
+    height: 10%;
+    background-color: aqua;
+    position: fixed;
+    float: left;
+    display: flex;
+    /* float 했는데 밑이랑 중첩돼서 왼쪽 오른쪽에 하이를 100을 줌. */
+    z-index: 1;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    background-color: aquamarine;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.menu{
+    width: 55%;
+    height: 100%;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li{
+    width: calc(100% / 5);
+    height: 100%;
+}
+
+.menu li a{
+    background-color: turquoise;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 25%;
+    height: 100%;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.searchbar{
+    background-color: tomato;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.searchbar input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+/* left 영역 */
+
+.left{
+    width: 20%;
+    height: 100vh;
+    background-color: yellowgreen;
+    float: left;
+    padding-top: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video{
+    width: 90%;
+    position: absolute;
+    top: 200px;
+}
+
+.left span{
+    display: inline-block;
+}
+
+.left p{
+    display: inline-block;
+}
+
+/* right 영역 */
+
+.right{
+    width: 80%;
+    height: 100vh;
+    background-color: yellow;
+    float: right;
+    padding: 80px 100px 0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .title span{
+    animation: foodshop 0.1s infinite;
+    display: inline-block;
+    /* display inline에만 애니메이션이 적용됨. */
+    font-size: ;
+}
+
+.title span:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.title span:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.title span:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(5){
+    animation-delay: 0.4s;
+}
+
+.title span:nth-child(6){
+    animation-delay: 0.5s;
+}
+
+.title span:nth-child(7){
+    animation-delay: 0.6s;
+}
+
+.title span:nth-child(8){
+    animation-delay: 0.7s;
+}
+
+@keyframes foodshop{
+    0%{
+        rotate: 5deg;
+    }
+    100%{
+        rotate: -5deg;
+    }
+}
+
+/* magazine */
+
+.magazine{
+    display: flex;
+
+}
+
+h1{
+
+}
+
+.magazine ul li img{
+    width: 100px;
+}
